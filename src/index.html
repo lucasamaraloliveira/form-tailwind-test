@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-100">
+    
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="bg-blue-400 lg:min-h-screen lg:flex lg:items-center p-8 sm:p-12 mx-8">
+                <div class="">
+                    <h1 class="text-white text-center text-2xl sm:text-5xl mb-2">
+                        Seja bem-vindo(a)
+                    </h1>
+
+                    <p class="text-center text-blue-200 sm:text-lg">
+                        Faça seu cadastro para começar!
+                    </p>
+                </div>
+            </div>
+            <div class="lg:min-h-screen lg:flex lg:items-center p-12 lg:p-24 xl:p-48">
+                
+                <div class="flex-grow bg-white shadow-xl rounded-xl border border-gray-300 p-8">
+                   
+                    <form>
+                        <fieldset class="border border-blue-400 pb-4 pt-4 pl-4 pr-4 rounded-xl">
+                            <h3 class="sm:text-lg p-3 text-center text-gray-400"> <b> Dados para login </b> </h3>
+                            <label for="mail" class="sm:text-lg mr-10 text-gray-400">Email</label><br> 
+                            <input type="email"id="mail" name="mail" class="border border-blue-400 rounded-xl p-1 w-full" placeholder="Digite seu email" required><br>
+                            <label for="pass" class="sm:text-lg mr-10 text-gray-400">Senha</label><br>  
+                            <input type="password" id="pass" name="pass" class="border border-blue-400 rounded-xl p-1 mt-2 w-full "placeholder="Digite sua senha" required><br> <br>
+                            <input type="submit" class="bg-white text-blue-400 border border-blue-400 rounded-xl p-1 align-middle hover:text-gray-400 hover:bg-blue-200 ">
+                            
+                        </fieldset> <br>
+
+                        <fieldset class="border border-blue-400 pb-4 pt-4 pl-4 pr-4 rounded-xl">
+                            <h3 class="sm:text-lg p-3 text-center text-gray-400"> <b> Dados pessoais </b> </h3>
+                            <label for="fname" class="sm:text-lg text-gray-400">Nome</label><br>  
+                            <input type="text" id="fname" name="fname" class="border border-blue-400 rounded-xl p-1 w-full" placeholder="Digite seu nome"><br>
+                            <label for="lname" class="sm:text-lg text-gray-400">Sobrenome</label><br>  
+                            <input type="text" id="lname" name="lname" class="border border-blue-400 rounded-xl p-1 mt-2 w-full" placeholder="Digite seu Sobrenome"><br><br>
+                            <label for="sex" class="sm:text-lg text-gray-400">Sexo</label><br>  
+                            <input type="radio" id="sex" name="sex" class="border border-blue-400 rounded-xl p-1 mt-2">
+                            <label for="masc" class="sm:text-lg text-gray-400">Masculino </label>
+                            <input type="radio"id="masc" name="sex" class="border border-blue-400 rounded-lg p-1 mt-2">
+                            <label for="femi" class="sm:text-lg text-gray-400 mb-8">Feminino</label> <br><br>
+                            <label class="sm:text-lg text-gray-400">CPF</label><br>  
+                            <input type="number" class="border border-blue-400 rounded-xl p-1 mt-2 w-full" placeholder="Digite seu CPF" required><br>
+                            <label class="sm:text-lg text-gray-400">Telefone</label><br>  
+                            <input type="tel" class="border border-blue-400 rounded-xl p-1 mt-2 w-full" placeholder="Digite seu telefone"><br>
+                            <label class="sm:text-lg text-gray-400">Data de nascimento</label><br>  
+                            <input type="date" class="border border-blue-400 rounded-xl p-1 mt-2 w-full"><br><br>
+                            
+                            
+                            <input type="submit" class="bg-white text-blue-400 border border-blue-400 rounded-xl p-1 hover:text-gray-400 hover:bg-blue-200">
+                            
+                        </fieldset> <br>
+
+                        <fieldset class="border border-blue-400 pb-4 pt-4 pl-4 pr-4 rounded-xl">
+                            <h3 class="sm:text-lg p-3 text-center text-gray-400"> <b> Endereço </b> </h3>
+                            <label class="sm:text-lg text-gray-400">CEP</label><br>  
+                            <input type="number" class="border border-blue-400 rounded-xl p-1 w-full" placeholder="Digite seu CEP"><br>
+                            <label class="sm:text-lg text-gray-400">Rua</label><br>  
+                            <input type="text" class="border border-blue-400 rounded-xl p-1 mt-2 w-full"placeholder="Digite sua rua"><br>
+                            <label class="sm:text-lg text-gray-400">Número</label><br>                             
+                            <input type="number" class="border border-blue-400 rounded-xl p-1 mt-2 w-full" placeholder="Digite seu número" required><br>
+                            <label class="sm:text-lg text-gray-400">Bairro</label><br>  
+                            <input type="text" class="border border-blue-400 rounded-xl p-1 mt-2 w-full"placeholder="Digite seu bairro"><br>
+                            <label class="sm:text-lg text-gray-400">Cidade</label><br>  
+                            <input type="text" class="border border-blue-400 rounded-xl p-1 mt-2 w-full"placeholder="Digite sua cidade"><br>
+                            <label class="sm:text-lg text-gray-400">Estado</label><br>  
+                            <select id="estado" name="estado" class="border border-blue-400 rounded-xl p-1 mt-2 sm:text-lg text-gray-400 w-full">
+                                <option value="SLE">Selecione o Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select><br><br>
+                            <input type="submit" class="bg-white text-blue-400 border border-blue-400 rounded-xl p-1 hover:text-gray-400 hover:bg-blue-200">
+                        </fieldset>
+                            
+                             
+                    </form>
+                    <div class="sm:flex sm:items-center">
+                        
+                        
+                        
+                            <div class="mt-4">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+</body>
+</html>
